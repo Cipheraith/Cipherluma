@@ -188,7 +188,7 @@ const AuthPage: React.FC<AuthPageProps> = ({ onLogin, onBack }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0F1629] via-[#1E3A8A] to-[#1E40AF] text-white">
+    <div className="min-h-screen bg-gradient-to-br from-[#0F1629] via-[#1E3A8A] to-[#1E40AF] text-white overflow-x-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -208,8 +208,12 @@ const AuthPage: React.FC<AuthPageProps> = ({ onLogin, onBack }) => {
         <div className="flex items-center space-x-10 sm:space-x-12 animate-fade-in">
           <img 
             src="/1750581770960.jpg" 
-            alt="CipherLuma" 
-            className="h-32 w-32 sm:h-40 sm:w-40 lg:h-48 lg:w-48 object-contain rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+            alt="CipherLuma logo: a secure, global payment platform" 
+            className="h-32 w-32 sm:h-40 sm:w-40 lg:h-48 lg:w-48 max-w-full object-contain rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400" 
+            style={{height: 'auto'}}
+            tabIndex={0}
+            role="img"
+            aria-label="CipherLuma logo"
           />
           <span className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white">CipherLuma</span>
         </div>
